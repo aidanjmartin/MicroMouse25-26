@@ -1,0 +1,315 @@
+Info: Processing symbol 'A1:Module:Arduino_Nano'.
+Info: Processing symbol 'Motor2:Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical'.
+Info: Processing symbol 'Motor1:Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical'.
+Info: Processing symbol 'D9:LED_THT:LED_D5.0mm_IRGrey'.
+Info: Processing symbol 'D6:LED_THT:LED_D5.0mm_IRGrey'.
+Info: Processing symbol 'D8:LED_THT:LED_D5.0mm_IRGrey'.
+Info: Processing symbol 'D7:LED_THT:LED_D5.0mm_IRGrey'.
+Info: Processing symbol 'D1:LED_THT:LED_D5.0mm_IRGrey'.
+Info: Processing symbol 'BT1:Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal'.
+Info: Processing symbol 'Q4:LED_THT:LED_D5.0mm_Clear'.
+Info: Processing symbol 'Q6:LED_THT:LED_D5.0mm_Clear'.
+Info: Processing symbol 'Q7:LED_THT:LED_D5.0mm_Clear'.
+Info: Processing symbol 'Q8:LED_THT:LED_D5.0mm_Clear'.
+Info: Processing symbol 'Q9:LED_THT:LED_D5.0mm_Clear'.
+Info: Processing symbol 'R1:Resistor_SMD:R_0805_2012Metric'.
+Info: Total warnings: 0, errors: 0.
+Info: Processing symbol 'R2:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R3:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R4:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'R5:Resistor_SMD:R_0805_2012Metric'.
+Info: Processing symbol 'U1:Package_SO:TSSOP-16_4.4x5mm_P0.65mm'.
+Add net unconnected-(A1-D13-Pad16).
+Connected A1 pin 16 to unconnected-(A1-D13-Pad16).
+Add net Net-(A1-D7).
+Connected A1 pin 10 to Net-(A1-D7).
+Add net unconnected-(A1-D0/RX-Pad2).
+Connected A1 pin 2 to unconnected-(A1-D0/RX-Pad2).
+Add net Net-(A1-A1).
+Connected A1 pin 20 to Net-(A1-A1).
+Connected A1 pin 29 to GND.
+Add net +5V.
+Connected A1 pin 27 to +5V.
+Add net Net-(A1-A4).
+Connected A1 pin 23 to Net-(A1-A4).
+Add net unconnected-(A1-AREF-Pad18).
+Connected A1 pin 18 to unconnected-(A1-AREF-Pad18).
+Add net unconnected-(A1-A6-Pad25).
+Connected A1 pin 25 to unconnected-(A1-A6-Pad25).
+Add net Net-(A1-A0).
+Connected A1 pin 19 to Net-(A1-A0).
+Add net unconnected-(A1-A5-Pad24).
+Connected A1 pin 24 to unconnected-(A1-A5-Pad24).
+Add net unconnected-(A1-D11-Pad14).
+Connected A1 pin 14 to unconnected-(A1-D11-Pad14).
+Add net Net-(A1-D8).
+Connected A1 pin 11 to Net-(A1-D8).
+Add net Net-(A1-D9).
+Add net Net-(A1-D6).
+Connected A1 pin 9 to Net-(A1-D6).
+Add net unconnected-(A1-~{RESET}-Pad3).
+Connected A1 pin 3 to unconnected-(A1-~{RESET}-Pad3).
+Add net unconnected-(A1-D1/TX-Pad1).
+Connected A1 pin 1 to unconnected-(A1-D1/TX-Pad1).
+Add net unconnected-(A1-D12-Pad15).
+Connected A1 pin 15 to unconnected-(A1-D12-Pad15).
+Add net Net-(A1-D5).
+Connected A1 pin 8 to Net-(A1-D5).
+Add net Net-(A1-D3).
+Connected A1 pin 6 to Net-(A1-D3).
+Add net Net-(A1-A3).
+Connected A1 pin 22 to Net-(A1-A3).
+Add net Net-(A1-D4).
+Connected A1 pin 7 to Net-(A1-D4).
+Add net Net-(A1-A2).
+Connected A1 pin 21 to Net-(A1-A2).
+Add net unconnected-(A1-3V3-Pad17).
+Connected A1 pin 17 to unconnected-(A1-3V3-Pad17).
+Add net +7.4V.
+Connected A1 pin 30 to +7.4V.
+Add net unconnected-(A1-~{RESET}-Pad28).
+Connected A1 pin 28 to unconnected-(A1-~{RESET}-Pad28).
+Add net unconnected-(A1-D10-Pad13).
+Connected A1 pin 13 to unconnected-(A1-D10-Pad13).
+Add net unconnected-(A1-A7-Pad26).
+Connected A1 pin 26 to unconnected-(A1-A7-Pad26).
+Added BT1 (footprint 'Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal').
+Changed REF** reference designator to BT1.
+Changed BT1 value from PinHeader_1x02_P2.54mm_Horizontal to Battery.
+Updated BT1 symbol association from  to /a15b5c58-d15f-4350-b689-eb4c26cc197a.
+Updated BT1 fields.
+Updated BT1 sheetname to '/'.
+Updated BT1 sheetfile to 'MicroPCB.kicad_sch'.
+Connected BT1 pin 2 to GND.
+Connected BT1 pin 1 to +7.4V.
+Connected A1 pin 12 to Net-(A1-D9).
+Added D1 (footprint 'LED_THT:LED_D5.0mm_IRGrey').
+Changed REF** reference designator to D1.
+Changed D1 value from LED_D5.0mm_IRGrey to SFH4546.
+Updated D1 symbol association from  to /d364a52a-8500-458f-8dab-aa5341312dea.
+Updated D1 fields.
+Updated D1 sheetname to '/'.
+Updated D1 sheetfile to 'MicroPCB.kicad_sch'.
+Updated D1 footprint filters to 'LED*5.0mm*IRGrey*'.
+Connected D1 pin 1 to GND.
+Add net Net-(D1-A).
+Connected D1 pin 2 to Net-(D1-A).
+Added D6 (footprint 'LED_THT:LED_D5.0mm_IRGrey').
+Changed REF** reference designator to D6.
+Changed D6 value from LED_D5.0mm_IRGrey to SFH4546.
+Updated D6 symbol association from  to /08316cb5-13d3-4a39-95e8-12236ac33036.
+Updated D6 fields.
+Updated D6 sheetname to '/'.
+Updated D6 sheetfile to 'MicroPCB.kicad_sch'.
+Updated D6 footprint filters to 'LED*5.0mm*IRGrey*'.
+Connected D6 pin 1 to GND.
+Add net Net-(D6-A).
+Connected D6 pin 2 to Net-(D6-A).
+Added D7 (footprint 'LED_THT:LED_D5.0mm_IRGrey').
+Changed REF** reference designator to D7.
+Changed D7 value from LED_D5.0mm_IRGrey to SFH4546.
+Updated D7 symbol association from  to /83f2b45d-ae40-4d47-94dd-6083e2ef880e.
+Updated D7 fields.
+Updated D7 sheetname to '/'.
+Updated D7 sheetfile to 'MicroPCB.kicad_sch'.
+Updated D7 footprint filters to 'LED*5.0mm*IRGrey*'.
+Connected D7 pin 1 to GND.
+Add net Net-(D7-A).
+Connected D7 pin 2 to Net-(D7-A).
+Added D8 (footprint 'LED_THT:LED_D5.0mm_IRGrey').
+Changed REF** reference designator to D8.
+Changed D8 value from LED_D5.0mm_IRGrey to SFH4546.
+Updated D8 symbol association from  to /8821b941-8939-4b70-8512-28374d1a13fc.
+Updated D8 fields.
+Updated D8 sheetname to '/'.
+Updated D8 sheetfile to 'MicroPCB.kicad_sch'.
+Updated D8 footprint filters to 'LED*5.0mm*IRGrey*'.
+Connected D8 pin 1 to GND.
+Add net Net-(D8-A).
+Connected D8 pin 2 to Net-(D8-A).
+Added D9 (footprint 'LED_THT:LED_D5.0mm_IRGrey').
+Changed REF** reference designator to D9.
+Changed D9 value from LED_D5.0mm_IRGrey to SFH4546.
+Updated D9 symbol association from  to /69a6e8d9-ebaa-4f4f-8831-5ac9095bce44.
+Updated D9 fields.
+Updated D9 sheetname to '/'.
+Updated D9 sheetfile to 'MicroPCB.kicad_sch'.
+Updated D9 footprint filters to 'LED*5.0mm*IRGrey*'.
+Add net Net-(D9-A).
+Connected D9 pin 2 to Net-(D9-A).
+Connected D9 pin 1 to GND.
+Added Motor1 (footprint 'Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical').
+Changed REF** reference designator to Motor1.
+Changed Motor1 value from PinHeader_1x06_P2.54mm_Vertical to ~.
+Updated Motor1 symbol association from  to /c2b107f8-f713-4ad0-b122-cc9a9bce6e53.
+Updated Motor1 sheetname to '/'.
+Updated Motor1 sheetfile to 'MicroPCB.kicad_sch'.
+Connected Motor1 pin 5 to Net-(A1-D8).
+Add net Net-(Motor1-GND_MOTOR).
+Connected Motor1 pin 2 to Net-(Motor1-GND_MOTOR).
+Connected Motor1 pin 3 to +7.4V.
+Add net Net-(Motor1-V_MOTOR).
+Connected Motor1 pin 1 to Net-(Motor1-V_MOTOR).
+Connected Motor1 pin 6 to Net-(A1-D9).
+Connected Motor1 pin 4 to GND.
+Added Motor2 (footprint 'Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical').
+Changed REF** reference designator to Motor2.
+Changed Motor2 value from PinHeader_1x06_P2.54mm_Vertical to ~.
+Updated Motor2 symbol association from  to /de9d8e9d-13c7-44d2-880f-639956971841.
+Updated Motor2 sheetname to '/'.
+Updated Motor2 sheetfile to 'MicroPCB.kicad_sch'.
+Add net Net-(Motor2-GND_MOTOR).
+Connected Motor2 pin 2 to Net-(Motor2-GND_MOTOR).
+Connected Motor2 pin 4 to GND.
+Add net Net-(Motor2-V_MOTOR).
+Connected Motor2 pin 1 to Net-(Motor2-V_MOTOR).
+Connected Motor2 pin 3 to +7.4V.
+Connected Motor2 pin 6 to Net-(A1-D7).
+Connected Motor2 pin 5 to Net-(A1-D6).
+Added A1 (footprint 'Module:Arduino_Nano').
+Added Q4 (footprint 'LED_THT:LED_D5.0mm_Clear').
+Changed REF** reference designator to Q4.
+Changed Q4 value from LED_D5.0mm_Clear to BPW40.
+Updated Q4 symbol association from  to /9847f65a-fec1-4220-b2df-6c694807b5d6.
+Updated Q4 fields.
+Updated Q4 sheetname to '/'.
+Updated Q4 sheetfile to 'MicroPCB.kicad_sch'.
+Updated Q4 footprint filters to 'LED*D5.0mm*Clear*'.
+Connected Q4 pin 1 to GND.
+Connected Q4 pin 2 to Net-(A1-A0).
+Changed REF** reference designator to A1.
+Added Q6 (footprint 'LED_THT:LED_D5.0mm_Clear').
+Changed REF** reference designator to Q6.
+Changed Q6 value from LED_D5.0mm_Clear to BPW40.
+Updated Q6 symbol association from  to /4ff93bd2-5cd4-41a1-ab1e-551f63d0cfe0.
+Updated Q6 fields.
+Updated Q6 sheetname to '/'.
+Updated Q6 sheetfile to 'MicroPCB.kicad_sch'.
+Updated Q6 footprint filters to 'LED*D5.0mm*Clear*'.
+Connected Q6 pin 1 to GND.
+Connected Q6 pin 2 to Net-(A1-A1).
+Changed A1 value from Arduino_Nano to Arduino_Nano_v3.x.
+Added Q7 (footprint 'LED_THT:LED_D5.0mm_Clear').
+Changed REF** reference designator to Q7.
+Changed Q7 value from LED_D5.0mm_Clear to BPW40.
+Updated Q7 symbol association from  to /6d784940-a340-4dde-8098-751ef593309f.
+Updated Q7 fields.
+Updated Q7 sheetname to '/'.
+Updated Q7 sheetfile to 'MicroPCB.kicad_sch'.
+Updated Q7 footprint filters to 'LED*D5.0mm*Clear*'.
+Connected Q7 pin 2 to Net-(A1-A2).
+Connected Q7 pin 1 to GND.
+Updated A1 symbol association from  to /1dcca4ae-5064-4e22-8959-89b819475571.
+Added Q8 (footprint 'LED_THT:LED_D5.0mm_Clear').
+Changed REF** reference designator to Q8.
+Changed Q8 value from LED_D5.0mm_Clear to BPW40.
+Updated Q8 symbol association from  to /4a49673b-a53c-4904-90ca-d478035ff5ba.
+Updated Q8 fields.
+Updated Q8 sheetname to '/'.
+Updated Q8 sheetfile to 'MicroPCB.kicad_sch'.
+Updated Q8 footprint filters to 'LED*D5.0mm*Clear*'.
+Connected Q8 pin 2 to Net-(A1-A3).
+Connected Q8 pin 1 to GND.
+Updated A1 fields.
+Added Q9 (footprint 'LED_THT:LED_D5.0mm_Clear').
+Changed REF** reference designator to Q9.
+Changed Q9 value from LED_D5.0mm_Clear to BPW40.
+Updated Q9 symbol association from  to /523e1457-af38-4ed0-9e63-7113f0c307f6.
+Updated Q9 fields.
+Updated Q9 sheetname to '/'.
+Updated Q9 sheetfile to 'MicroPCB.kicad_sch'.
+Updated Q9 footprint filters to 'LED*D5.0mm*Clear*'.
+Connected Q9 pin 2 to Net-(A1-A4).
+Connected Q9 pin 1 to GND.
+Updated A1 sheetname to '/'.
+Added R1 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R1.
+Changed R1 value from R_0805_2012Metric to 300.
+Updated R1 symbol association from  to /3824dcd4-a66f-4c04-ad83-a5e9b5f949d5.
+Updated R1 fields.
+Updated R1 sheetname to '/'.
+Updated R1 sheetfile to 'MicroPCB.kicad_sch'.
+Updated R1 footprint filters to 'R_*'.
+Connected R1 pin 1 to +5V.
+Updated A1 sheetfile to 'MicroPCB.kicad_sch'.
+Updated A1 footprint filters to 'Arduino*Nano*'.
+Added R2 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R2.
+Changed R2 value from R_0805_2012Metric to 300.
+Updated R2 symbol association from  to /ab48efb7-e015-4bcb-89e4-1cb07f030e18.
+Updated R2 fields.
+Updated R2 sheetname to '/'.
+Updated R2 sheetfile to 'MicroPCB.kicad_sch'.
+Updated R2 footprint filters to 'R_*'.
+Connected R2 pin 1 to +5V.
+Connected R2 pin 2 to Net-(D6-A).
+Add net GND.
+Added R3 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R3.
+Changed R3 value from R_0805_2012Metric to 300.
+Updated R3 symbol association from  to /302c1184-155d-4fe2-b3ed-264ab53b194b.
+Updated R3 fields.
+Updated R3 sheetname to '/'.
+Updated R3 sheetfile to 'MicroPCB.kicad_sch'.
+Updated R3 footprint filters to 'R_*'.
+Connected R3 pin 1 to +5V.
+Connected R3 pin 2 to Net-(D7-A).
+Connected A1 pin 4 to GND.
+Added R4 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R4.
+Changed R4 value from R_0805_2012Metric to 300.
+Updated R4 symbol association from  to /7b56ac3b-1435-4c6d-b9e2-d08d44a59ba9.
+Updated R4 fields.
+Updated R4 sheetname to '/'.
+Updated R4 sheetfile to 'MicroPCB.kicad_sch'.
+Updated R4 footprint filters to 'R_*'.
+Connected R4 pin 2 to Net-(D8-A).
+Connected R4 pin 1 to +5V.
+Add net Net-(A1-D2).
+Added R5 (footprint 'Resistor_SMD:R_0805_2012Metric').
+Changed REF** reference designator to R5.
+Changed R5 value from R_0805_2012Metric to 300.
+Updated R5 symbol association from  to /ffa01a42-49f0-4ce8-b523-046fe899223f.
+Connected R1 pin 2 to Net-(D1-A).
+Updated R5 sheetname to '/'.
+Updated R5 sheetfile to 'MicroPCB.kicad_sch'.
+Updated R5 footprint filters to 'R_*'.
+Connected R5 pin 2 to Net-(D9-A).
+Connected R5 pin 1 to +5V.
+Connected A1 pin 5 to Net-(A1-D2).
+Added U1 (footprint 'Package_SO:TSSOP-16_4.4x5mm_P0.65mm').
+Changed REF** reference designator to U1.
+Changed U1 value from TSSOP-16_4.4x5mm_P0.65mm to DRV8833PW.
+Updated U1 symbol association from  to /dc83ef38-401a-4ee0-825f-9fc9dc7672e4.
+Updated U1 fields.
+Updated U1 sheetname to '/'.
+Updated U1 sheetfile to 'MicroPCB.kicad_sch'.
+Updated U1 footprint filters to 'TSSOP-16*4.4x5mm*P0.65mm*'.
+Connected U1 pin 14 to +7.4V.
+Add net unconnected-(U1-VM-Pad12).
+Connected U1 pin 12 to unconnected-(U1-VM-Pad12).
+Connected U1 pin 2 to Net-(Motor1-V_MOTOR).
+Connected U1 pin 16 to Net-(A1-D2).
+Connected U1 pin 7 to Net-(Motor2-V_MOTOR).
+Connected U1 pin 10 to Net-(A1-D5).
+Add net unconnected-(U1-~{FAULT}-Pad8).
+Connected U1 pin 8 to unconnected-(U1-~{FAULT}-Pad8).
+Add net unconnected-(U1-BISEN-Pad6).
+Connected U1 pin 6 to unconnected-(U1-BISEN-Pad6).
+Connected U1 pin 9 to Net-(A1-D4).
+Connected U1 pin 13 to GND.
+Connected U1 pin 5 to Net-(Motor2-GND_MOTOR).
+Connected U1 pin 4 to Net-(Motor1-GND_MOTOR).
+Add net unconnected-(U1-~{SLEEP}-Pad1).
+Connected U1 pin 1 to unconnected-(U1-~{SLEEP}-Pad1).
+Connected U1 pin 15 to Net-(A1-D3).
+Add net unconnected-(U1-AISEN-Pad3).
+Connected U1 pin 3 to unconnected-(U1-AISEN-Pad3).
+Add net unconnected-(U1-VCP-Pad11).
+Connected U1 pin 11 to unconnected-(U1-VCP-Pad11).
+
+
+Updated R5 fields.
+
+
+Info: Total warnings: 0, errors: 0.
