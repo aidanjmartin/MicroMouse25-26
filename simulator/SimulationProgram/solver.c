@@ -43,13 +43,12 @@ int queueIsEmpty() {
 void initializeFlood() {
     for (int x = 0; x < MAZE_SIZE; x++) {
         for (int y = 0; y < MAZE_SIZE; y++) {
-            maze[x][y] = abs(x - 7) + abs(y - 7); //Goal : center
+            maze[x][y] = abs(x - 7) + abs(y - 7);
         }
     }
 }
 
 void updateWalls() {
-    // Current cell
     if (API_wallFront()) {
         walls[mouseX][mouseY][direction] = true;
     }
@@ -60,8 +59,7 @@ void updateWalls() {
         walls[mouseX][mouseY][(direction + 3) % 4] = true;
     }
 
-
-    // Mirror walls to neighboring cells
+    // Mirror each wall onto the neighbor's opposite face so lookups from either side agree.
     for (int dir = 0; dir < 4; dir++) {
         int nx = mouseX + dx[dir];
         int ny = mouseY + dy[dir];
@@ -71,23 +69,18 @@ void updateWalls() {
             walls[nx][ny][opp] = walls[mouseX][mouseY][dir];
         }
     }
-    // update neighbor's opposite walls, add later
-}   
-
+}
 
 void floodUpdate() {
-    // Initialize queue with goal cells (center of maze)
     queueStart = 0;
     queueEnd = 0;
 
-    // reset and seed center cells
     for (int x = 0; x < MAZE_SIZE; x++) {
         for (int y = 0; y < MAZE_SIZE; y++) {
-            maze[x][y] = 255; // High value
+            maze[x][y] = 255;
         }
     }
 
-    // Set center cells flood to 0 and enqueue them
     for (int x = 7; x <= 8; x++) {
         for (int y = 7; y <= 8; y++) {
             maze[x][y] = 0;
@@ -109,7 +102,6 @@ void floodUpdate() {
             int ny = cy + dy[dir];
 
             if (nx < 0 || nx >= MAZE_SIZE || ny < 0 || ny >= MAZE_SIZE) continue;
-            // Check for wall between (cx, cy) and (nx, ny)
             if (walls[cx][cy][dir]) continue;
 
             int newDist = currentDist + 1;
@@ -128,35 +120,29 @@ Action solver() {
     return floodFill();
 }
 
-// This is an example of a simple left wall following algorithm.
 Action leftWallFollower() {
-    if(API_wallFront()) {
-        if(API_wallLeft()){
-            return RIGHT;
-        }
+    if (API_wallFront()) {
+        if (API_wallLeft()) return RIGHT;
         return LEFT;
     }
     return FORWARD;
 }
 
-
-
 bool isWall(int absDir) {
-    // dir: 0 = N, 1 = E, 2 = S, 3 = W
     int rel = (absDir - direction + 4) % 4;
 
     if (rel == 0) return API_wallFront();
     if (rel == 1) return API_wallRight();
     if (rel == 3) return API_wallLeft();
-    // rel == 2 means wall behind, no movement for that
-    return true; // assumes wall behind
-} 
+    // rel == 2 is behind us; we never check that direction, so treat it as walled.
+    return true;
+}
 
-
-// Put your implementation of floodfill here!
 Action floodFill() {
     static int initialized = 0;
     static int pendingUTurn = 0;
+
+    // A 180 is executed as two consecutive RIGHT turns; the second fires here on the next tick.
     if (pendingUTurn > 0) {
         pendingUTurn--;
         return RIGHT;
@@ -166,8 +152,8 @@ Action floodFill() {
         initialized = 1;
     }
 
-    updateWalls(); // read and store walls from sensors
-    floodUpdate(); // recompute flood values
+    updateWalls();
+    floodUpdate();
 
     for (int x = 0; x < MAZE_SIZE; x++) {
         for (int y = 0; y < MAZE_SIZE; y++) {
@@ -181,7 +167,6 @@ Action floodFill() {
     int bestDir = -1;
     int bestVal = currentVal;
 
-    //Check all four directions
     for (int dir = 0; dir < 4; dir++) {
         int nx = mouseX + dx[dir];
         int ny = mouseY + dy[dir];
@@ -195,10 +180,8 @@ Action floodFill() {
         }
     }
 
+    if (bestDir == -1) return IDLE;
 
-    if (bestDir == -1) return IDLE; // if no move found
-
-    // Determine turn needed
     int turn = (bestDir - direction + 4) % 4;
 
     if (turn == 0) {
@@ -212,10 +195,9 @@ Action floodFill() {
         direction = (direction + 3) % 4;
         return LEFT;
     } else if (turn == 2) {
-        // 180 turn
         direction = (direction + 2) % 4;
-        pendingUTurn = 1; // triggers 2nd turn next loop
+        pendingUTurn = 1;
         return RIGHT;
     }
     return IDLE;
-}   
+}
